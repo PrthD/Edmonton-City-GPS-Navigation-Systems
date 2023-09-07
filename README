@@ -1,0 +1,65 @@
+Name: Parth Dadhania
+SID: 1722612
+CCID: pdadhani
+AnonID: 1000330704
+CMPUT 275, Winter 2023
+
+Assessment: Assignment - Navigation System (Part 2)
+
+Included Files:
+    > server
+        * server.cpp
+        * dijkstra.cpp
+        * digraph.cpp
+        * digraph.h
+        * wdigraph.h
+        * dijkstra.h
+        * edmonton-roads-2.0.1.txt
+        * Makefile
+            Makefile Targets:
+                - make (server): Builds the executable server
+                - make clean: Removes all object files and the executable
+                - make server.o: Builds the object file for server.cpp
+                - make digraph.o: Builds the object file for digraph.cpp
+                - make dijkstra.o: Builds the object file for dijkstra.cpp
+    > client
+        * client.py
+
+    > map
+
+    > Makefile
+        Makefile Targets:
+                - make (run): Builds the executable server
+                - make clean: Removes all object files, executable, and named pipes
+                - make all: executes the compile and run targets of this makefile
+                - make compile: Builds the executable server in the server directory
+
+    > README
+
+Running instructions:
+        1. First, navigate to the server directory and open the terminal. Then, execute the command "make (server)" to compile and link
+           the server-related files.
+
+        2. Next, return to the soln folder and open the terminal. Execute "make (run)" to run both the server and the client, which
+           should bring up the map of Edmonton.
+
+        3. To select a starting point and an endpoint on the map, click on each location using the left mouse button. After doing so,
+           the shortest path between the two points will appear as a colored line.
+
+        4. Use the "w-s-d-a" keys to navigate through the map, and use "q/e" to zoom in or out respectively.
+
+        5. Once finished, execute "make clean" in the soln directory to restore all the directories to their default state. This step
+           must be followed after every executions of program to avoid errors.
+
+Notes and Assumptions:
+        The files dijkstra.cpp, digraph.cpp, digraph.h, wdigraph.h, dijkstra.h, and edmonton-roads-2.0.1.txt in the subdirectory server
+    and client.py in the subdirectory client are completely unchanged. The file server.cpp contains all the implementation for part 2 of
+    the assignment-Navigation System.
+
+        It is important to follow steps 1-5 correctly when running the program, as failure to do so will result in the program not
+    working as intended. Additionally, note that the program is only configured to be run on Linux-based operating systems. When the
+    second point is selected on the map, the server will send an 'E', and when the map window is closed, the server will send a 'Q'.
+
+        The soln/Makefile does not check whether the server executable has been made, hence it is a must to create the server executable
+    prior to running the makefile. Also, if user attempts to manually run the client program before the server program, the program will
+    fail.
