@@ -1,4 +1,4 @@
-# Edmonton-City-GPS-Navigation-Systems
+# Edmonton City GPS Navigation Systems
 
 ## Project Overview
 The Edmonton City GPS Navigation Systems project provides a graphical interface to navigate and determine the shortest path between two points in Edmonton using a map. The system includes a server component for processing and a client component for interacting with the map.
