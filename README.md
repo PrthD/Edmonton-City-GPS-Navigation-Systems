@@ -18,6 +18,7 @@ The Edmonton City GPS Navigation Systems project provides a graphical interface 
    - `client.py`: Client-side implementation
 - **/map/**: Directory for map-related resources
 - `Makefile`: Top-level build instructions
+- `README`: Project documentation
 
 ### Server Makefile Targets
 - `make server`: Builds the executable `server`
