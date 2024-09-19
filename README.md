@@ -3,37 +3,34 @@
 ## Project Overview
 The Edmonton City GPS Navigation Systems project provides a graphical interface to navigate and determine the shortest path between two points in Edmonton using a map. The system includes a server component for processing and a client component for interacting with the map.
 
-## Included Files
+## Project Structure
 
-### Server
-- `server.cpp`
-- `dijkstra.cpp`
-- `digraph.cpp`
-- `digraph.h`
-- `wdigraph.h`
-- `dijkstra.h`
-- `edmonton-roads-2.0.1.txt`
-- `Makefile`
+- **server/**: Server-side code and resources
+   - `server.cpp`: Main server implementation
+   - `dijkstra.cpp`: Implementation of Dijkstra's algorithm
+   - `digraph.cpp`: Implementation of directed graph data structure
+   - `digraph.h`: Header file for directed graph
+   - `wdigraph.h`: Header file for weighted directed graph
+   - `dijkstra.h`: Header file for Dijkstra's algorithm
+   - `edmonton-roads-2.0.1.txt`: Road network data file
+   - `Makefile`: Build instructions for server components
+- **client/**
+   - `client.py`: Client-side implementation
+- **map/**: Directory for map-related resources
+- `Makefile`: Top-level build instructions
 
-**Makefile Targets:**
-- `make server`: Builds the executable `server`.
-- `make clean`: Removes all object files and the executable.
-- `make server.o`: Builds the object file for `server.cpp`.
-- `make digraph.o`: Builds the object file for `digraph.cpp`.
-- `make dijkstra.o`: Builds the object file for `dijkstra.cpp`.
+### Server Makefile Targets
+- `make server`: Builds the executable `server`
+- `make clean`: Removes all object files and the executable
+- `make server.o`: Builds the object file for `server.cpp`
+- `make digraph.o`: Builds the object file for `digraph.cpp`
+- `make dijkstra.o`: Builds the object file for `dijkstra.cpp`
 
-### Client
-- `client.py`
-
-### Map
-- (Directory for map-related resources)
-
-### Makefile
-**Makefile Targets:**
-- `make run`: Builds the executable `server` and runs both the server and the client.
-- `make clean`: Removes all object files, executable, and named pipes.
-- `make all`: Executes both compile and run targets.
-- `make compile`: Builds the executable `server` in the server directory.
+### Top-level Makefile Targets
+- `make run`: Builds the executable `server` and runs both the server and the client
+- `make clean`: Removes all object files, executable, and named pipes
+- `make all`: Executes both compile and run targets
+- `make compile`: Builds the executable `server` in the server directory
 
 ## Running Instructions
 1. Navigate to the `server` directory in the terminal:
