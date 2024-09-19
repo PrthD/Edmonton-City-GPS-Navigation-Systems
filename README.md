@@ -5,7 +5,7 @@ The Edmonton City GPS Navigation Systems project provides a graphical interface 
 
 ## Project Structure
 
-- **server/**: Server-side code and resources
+- **/server/**: Server-side code and resources
    - `server.cpp`: Main server implementation
    - `dijkstra.cpp`: Implementation of Dijkstra's algorithm
    - `digraph.cpp`: Implementation of directed graph data structure
@@ -14,9 +14,9 @@ The Edmonton City GPS Navigation Systems project provides a graphical interface 
    - `dijkstra.h`: Header file for Dijkstra's algorithm
    - `edmonton-roads-2.0.1.txt`: Road network data file
    - `Makefile`: Build instructions for server components
-- **client/**
+- **/client/**
    - `client.py`: Client-side implementation
-- **map/**: Directory for map-related resources
+- **/map/**: Directory for map-related resources
 - `Makefile`: Top-level build instructions
 
 ### Server Makefile Targets
